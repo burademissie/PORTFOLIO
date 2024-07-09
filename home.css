@@ -1,0 +1,205 @@
+body {
+    background-color: black;
+}
+
+.mybackground {
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 50px;
+    width: 100%;
+    margin: 0;
+}
+
+.mybackground img {
+    transition: all 0.5s;
+    opacity: 0.6;
+    box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    margin: 0px 0px 100px 50px;
+}
+
+.mybackground img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.links ul {
+    color: white;
+    list-style-type: none;
+    font-family: serif;
+    margin: 0px;
+    padding: 0;
+    float: right;
+}
+
+.links ul li {
+    display: inline-block;
+    font-size: large;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 30px;
+    transition: all .2s ease-in-out;
+    position: relative; /* Make li position relative for child ul positioning */
+}
+
+.links ul li:hover {
+    color: rgb(255, 187, 61);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.links ul i {
+    margin-top: 50px;
+    transition: 0.5s;
+    margin-right: 40px;
+    width: 20px;
+    height: 20px;
+    transition: all .4s ease-in-out;
+}
+
+.links ul i:hover {
+    color: rgb(255, 187, 61);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.links ul li ul.skill{
+    display: none;
+}
+
+.links ul li:hover ul.skill{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    text-align: center;
+    left: -30px;
+    margin: auto;
+    padding: 0px;
+    background-color: rgb(226, 219, 219);
+    border-radius: 10px;
+    color: black;
+}
+#web{
+    margin-top: 0px;
+}
+.links ul li ul li{
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.wrapper {
+    display: inline-flex;
+}
+
+.statictxt {
+    color: white;
+    font-weight: bolder;
+    font-size: 80px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.wrapper .dynamictxt {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 89.7px;
+    overflow: hidden;
+}
+
+.dynamictxt li {
+    color: rgb(255, 187, 61);
+    font-weight: bolder;
+    font-size: 80px;
+    list-style-type: none;
+    position: relative;
+    top: 0;
+    margin: 0;
+    animation: slide 9s steps(3) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -269px;
+    }
+}
+
+.dynamictxt li span {
+    position: relative;
+}
+
+.dynamictxt li span::after {
+    content: "";
+    border-left: 2px solid rgb(255, 187, 61);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    animation: typing 3s steps(13) infinite;
+}
+
+@keyframes typing {
+    40%, 60% {
+        left: calc(100% + 20px);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.my_skills, .graphics {
+    display: inline-flex;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 10px 20px 20px whitesmoke;
+    cursor: pointer;
+}
+
+.logos {
+    margin: 30px 0px 100px 0px;
+    display: flex;
+    justify-content: space-around;
+    text-shadow: 10px 20px 20px whitesmoke;
+}
+.web{
+    width: 50%;
+    position: absolute;
+    margin-left: 400px;
+    margin-right: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.web i{
+    margin-left: 40px;
+    margin-bottom: 50px;
+    font-size: 100px;
+    text-shadow: 10px 20px 60px ;
+}
+.web i:hover{
+    opacity: 0.6;
+    cursor: pointer;
+    transform: rotate(20deg);
+}
+.graphics img:hover{
+    opacity: 0.6;
+    cursor: pointer;
+    transform: rotate(20deg);
+}
+
+.colorChange{
+    color: black;
+}
+.colorChangeafter::after {
+    background-color: white;
+}
+
