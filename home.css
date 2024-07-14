@@ -190,6 +190,11 @@ body {
     cursor: pointer;
     transform: rotate(20deg);
 }
+.logos :hover{
+    opacity: 0.6;
+    cursor: pointer;
+    transform: rotate(-20deg);
+}
 .graphics img:hover{
     opacity: 0.6;
     cursor: pointer;
